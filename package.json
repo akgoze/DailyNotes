@@ -2,6 +2,11 @@
   "name": "dailymind",
   "version": "0.0.0",
   "private": true,
+  "author": {
+    "name": "Fatih Akgoze",
+    "email": "fatih@akgoze.dev",
+    "url": "https://akgoze.dev"
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
