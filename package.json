@@ -2,6 +2,11 @@
   "name": "dailymind",
   "version": "0.0.0",
   "private": true,
+  "author": {
+    "name": "Fatih Akgoze",
+    "email": "fatih@akgoze.dev",
+    "url": "https://akgoze.dev"
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
@@ -12,7 +17,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "firebase": "^9.19.1",
+    "vue": "^3.2.47",
+    "vuefire": "^3.1.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
