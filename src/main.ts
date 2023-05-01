@@ -15,4 +15,4 @@ createApp(App)
   })
   .mount("#app");
 
-import "./assets/main.css";
+import "./assets/main.scss";
