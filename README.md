@@ -39,7 +39,8 @@ According to the Gitflow, the **type** can be one of the following:
 **support** is a support branch,
 
 ## Commit Naming
-Commit naming is based on the [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) format. 
+
+Commit naming is based on the [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) format.
 According to this format, a commit message consists of a **type**, **scope**, and **description**. The scope of the commit is optional.
 
 ```
@@ -60,6 +61,15 @@ The **scope** is optional and can be anything specifying the place of the commit
 
 The **description** should be clear and concise.
 
+### Changelog
 
+Changelog is based on the [keep a changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) format.
+According to this format, a changelog consists of a **version**, **released**, and **changes**. The **released** and **changes** are optional.
 
-Write a commit message in the following format:
+The example of changelog item is:
+
+```
+## [1.0.0] - 2020-01-01
+### Added
+- Links to latest released version in previous versions.
+```
