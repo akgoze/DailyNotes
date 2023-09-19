@@ -8,19 +8,9 @@ DailyMind is a web application that allows users to create and manage their own 
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Testing](#testing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-
-## Commit Message Format
-
-I follow the [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) format for commit messages.
-According to this format, a commit message consists of a **header**, **body**, and **footer**.
-The header has a **type**, **scope**, and **subject**. The header is mandatory and the scope of the header is optional.
-The body and footer are optional.
+- [Branch Naming](#branch-naming)
+- [Commit Naming](#commit-naming)
+- [Changelog](#changelog)
 
 ## Branch Naming
 
