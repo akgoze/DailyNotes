@@ -1,6 +1,7 @@
 import { memo, useEffect, useRef } from "react";
 import EditorJS from "@editorjs/editorjs";
 import { tools } from "./tools";
+import "./app-editor.scss";
 
 const onChange = (data: any, event:any) => {
   console.log(data, event);
