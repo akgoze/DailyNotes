@@ -1,0 +1,13 @@
+#AppEditor {
+  width: 100%;
+  max-width: 700px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 1000vw;
+}
