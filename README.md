@@ -21,12 +21,13 @@ Branch naming is based on the [Gitflow](https://datasift.github.io/gitflow/Intro
 ```
 
 According to the Gitflow, the **type** can be one of the following:
-**feature** is a new feature,
-**bugfix** is a bug fix,
-**docs** is documentation only changes,
-**hotfix** is a hotfix,
-**release** is a release,
-**support** is a support branch,
+
+- **feature** is a new feature,
+- **bugfix** is a bug fix,
+- **docs** is documentation only changes,
+- **hotfix** is a hotfix,
+- **release** is a release,
+- **support** is a support branch,
 
 ## Commit Naming
 
@@ -38,14 +39,15 @@ According to this format, a commit message consists of a **type**, **scope**, an
 ```
 
 The **type** can be one of the following:
-**feat** is a new feature,
-**fix** is a bug fix,
-**docs** is documentation only changes,
-**style** is changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc),
-**refactor** is a code change that neither fixes a bug nor adds a feature,
-**perf** is a code change that improves performance,
-**test** is adding missing tests or correcting existing tests,
-**chore** is changes to the build process or auxiliary tools and libraries such as documentation generation.
+
+- **feat** is a new feature,
+- **fix** is a bug fix,
+- **docs** is documentation only changes,
+- **style** is changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc),
+- **refactor** is a code change that neither fixes a bug nor adds a feature,
+- **perf** is a code change that improves performance,
+- **test** is adding missing tests or correcting existing tests,
+- **chore** is changes to the build process or auxiliary tools and libraries such as documentation generation.
 
 The **scope** is optional and can be anything specifying the place of the commit change. For example, **init**, **runner**, **watcher**, **config**, **web-server**, **proxy**, **etc**.
 
