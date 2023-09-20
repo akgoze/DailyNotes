@@ -7,7 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Add editorjs to the project.
 - Connect firebase to the project.
 
-## [0.0.1] - 2023-09-18
+## [0.0.1] - 2023-09-20
+
+- Added editorjs to the project.
