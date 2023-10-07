@@ -3,6 +3,8 @@ import EditorJS from "@editorjs/editorjs";
 import { tools } from "./tools";
 import "./app-editor.scss";
 
+import EditorHeader from "./../EditorHeader";
+
 const onChange = (data: any, event:any) => {
   console.log(data, event);
 }
@@ -40,6 +42,7 @@ const Editor = () => {
   return (
     <>
       <div id="AppEditor">
+        <EditorHeader />
         <div id='Editor' />
       </div>
     </>
