@@ -16,7 +16,7 @@ const Editor = () => {
     //Initialize editorjs if we don't have a reference
     if (!ref.current) {
       const editor = new EditorJS({
-        holder: 'AppEditor',
+        holder: 'Editor',
 
         tools: tools,
         placeholder: 'Let`s write an awesome story!',
@@ -37,7 +37,13 @@ const Editor = () => {
     };
   }, []);
 
-  return <div id='AppEditor' />;
+  return (
+    <>
+      <div id="AppEditor">
+        <div id='Editor' />
+      </div>
+    </>
+  );
 };
 
 export default memo(Editor);

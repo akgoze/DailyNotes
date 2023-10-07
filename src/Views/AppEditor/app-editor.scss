@@ -1,4 +1,18 @@
 #AppEditor {
-  width: 100%;
-  max-width: 700px;
+  width: auto;
+  height: fit-content;
+  min-height: calc(100vh - 72px);
+  margin: 8px;
+  border-radius: 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(253, 252, 251, 0.8);
+  padding-top: 48px;
+  padding-bottom: 48px;
+  box-shadow:
+    0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0px -1px 2px 0px rgba(0, 0, 0, 0.02);
+  .ce-block__content,
+  .ce-toolbar__content {
+    max-width: 800px;
+  }
 }
