@@ -41,9 +41,12 @@ const Editor = () => {
 
   return (
     <>
-      <div id="AppEditor">
-        <EditorHeader />
-        <div id='Editor' />
+      <div className="editor-container">
+        <span className="header_line" />
+        <div id="AppEditor">
+          <EditorHeader />
+          <div id='Editor' />
+        </div>
       </div>
     </>
   );
