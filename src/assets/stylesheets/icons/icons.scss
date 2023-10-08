@@ -1,0 +1,208 @@
+$icons-font: "icons";
+
+@font-face {
+    font-family: $icons-font;
+    src:
+        url("src/assets/stylesheets/icons/icons.woff?1b5b1415c3efb482bffc6c443692af8c") format("woff"),
+        url("src/assets/stylesheets/icons/icons.woff2?1b5b1415c3efb482bffc6c443692af8c") format("woff2");
+}
+
+i[class^="i-"]:before,
+i[class*=" i-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$icons-map: (
+    "chevron-down-bold": "\f101",
+    "chevron-down-regular": "\f102",
+    "chevron-left-bold": "\f103",
+    "chevron-left-regular": "\f104",
+    "chevron-right-bold": "\f105",
+    "chevron-right-regular": "\f106",
+    "chevron-up-bold": "\f107",
+    "chevron-up-regular": "\f108",
+    "close-bold": "\f109",
+    "close-circle-bold": "\f10a",
+    "close-circle-regular": "\f10b",
+    "close-regular": "\f10c",
+    "copy-bold": "\f10d",
+    "copy-regular": "\f10e",
+    "delete-bold": "\f10f",
+    "delete-regular": "\f110",
+    "dot-horizontal-bold": "\f111",
+    "dot-horizontal-regular": "\f112",
+    "dot-vertical-bold": "\f113",
+    "dot-vertical-regular": "\f114",
+    "draw-bold": "\f115",
+    "draw-regular": "\f116",
+    "edit-bold": "\f117",
+    "edit-regular": "\f118",
+    "export-bold": "\f119",
+    "export-regular": "\f11a",
+    "eye-close-bold": "\f11b",
+    "eye-close-regular": "\f11c",
+    "eye-open-bold": "\f11d",
+    "eye-open-regular": "\f11e",
+    "filter-bold": "\f11f",
+    "filter-regular": "\f120",
+    "history-bold": "\f121",
+    "history-regular": "\f122",
+    "like-bold": "\f123",
+    "like-regular": "\f124",
+    "search-bold": "\f125",
+    "search-regular": "\f126",
+    "settings-bold": "\f127",
+    "settings-regular": "\f128",
+    "shapes-bold": "\f129",
+    "shapes-regular": "\f12a",
+    "type-bold": "\f12b",
+    "type-regular": "\f12c",
+    "weather-bold": "\f12d",
+    "weather-regular": "\f12e"
+);
+
+.i-chevron-down-bold:before {
+    content: map-get($icons-map, "chevron-down-bold");
+}
+.i-chevron-down-regular:before {
+    content: map-get($icons-map, "chevron-down-regular");
+}
+.i-chevron-left-bold:before {
+    content: map-get($icons-map, "chevron-left-bold");
+}
+.i-chevron-left-regular:before {
+    content: map-get($icons-map, "chevron-left-regular");
+}
+.i-chevron-right-bold:before {
+    content: map-get($icons-map, "chevron-right-bold");
+}
+.i-chevron-right-regular:before {
+    content: map-get($icons-map, "chevron-right-regular");
+}
+.i-chevron-up-bold:before {
+    content: map-get($icons-map, "chevron-up-bold");
+}
+.i-chevron-up-regular:before {
+    content: map-get($icons-map, "chevron-up-regular");
+}
+.i-close-bold:before {
+    content: map-get($icons-map, "close-bold");
+}
+.i-close-circle-bold:before {
+    content: map-get($icons-map, "close-circle-bold");
+}
+.i-close-circle-regular:before {
+    content: map-get($icons-map, "close-circle-regular");
+}
+.i-close-regular:before {
+    content: map-get($icons-map, "close-regular");
+}
+.i-copy-bold:before {
+    content: map-get($icons-map, "copy-bold");
+}
+.i-copy-regular:before {
+    content: map-get($icons-map, "copy-regular");
+}
+.i-delete-bold:before {
+    content: map-get($icons-map, "delete-bold");
+}
+.i-delete-regular:before {
+    content: map-get($icons-map, "delete-regular");
+}
+.i-dot-horizontal-bold:before {
+    content: map-get($icons-map, "dot-horizontal-bold");
+}
+.i-dot-horizontal-regular:before {
+    content: map-get($icons-map, "dot-horizontal-regular");
+}
+.i-dot-vertical-bold:before {
+    content: map-get($icons-map, "dot-vertical-bold");
+}
+.i-dot-vertical-regular:before {
+    content: map-get($icons-map, "dot-vertical-regular");
+}
+.i-draw-bold:before {
+    content: map-get($icons-map, "draw-bold");
+}
+.i-draw-regular:before {
+    content: map-get($icons-map, "draw-regular");
+}
+.i-edit-bold:before {
+    content: map-get($icons-map, "edit-bold");
+}
+.i-edit-regular:before {
+    content: map-get($icons-map, "edit-regular");
+}
+.i-export-bold:before {
+    content: map-get($icons-map, "export-bold");
+}
+.i-export-regular:before {
+    content: map-get($icons-map, "export-regular");
+}
+.i-eye-close-bold:before {
+    content: map-get($icons-map, "eye-close-bold");
+}
+.i-eye-close-regular:before {
+    content: map-get($icons-map, "eye-close-regular");
+}
+.i-eye-open-bold:before {
+    content: map-get($icons-map, "eye-open-bold");
+}
+.i-eye-open-regular:before {
+    content: map-get($icons-map, "eye-open-regular");
+}
+.i-filter-bold:before {
+    content: map-get($icons-map, "filter-bold");
+}
+.i-filter-regular:before {
+    content: map-get($icons-map, "filter-regular");
+}
+.i-history-bold:before {
+    content: map-get($icons-map, "history-bold");
+}
+.i-history-regular:before {
+    content: map-get($icons-map, "history-regular");
+}
+.i-like-bold:before {
+    content: map-get($icons-map, "like-bold");
+}
+.i-like-regular:before {
+    content: map-get($icons-map, "like-regular");
+}
+.i-search-bold:before {
+    content: map-get($icons-map, "search-bold");
+}
+.i-search-regular:before {
+    content: map-get($icons-map, "search-regular");
+}
+.i-settings-bold:before {
+    content: map-get($icons-map, "settings-bold");
+}
+.i-settings-regular:before {
+    content: map-get($icons-map, "settings-regular");
+}
+.i-shapes-bold:before {
+    content: map-get($icons-map, "shapes-bold");
+}
+.i-shapes-regular:before {
+    content: map-get($icons-map, "shapes-regular");
+}
+.i-type-bold:before {
+    content: map-get($icons-map, "type-bold");
+}
+.i-type-regular:before {
+    content: map-get($icons-map, "type-regular");
+}
+.i-weather-bold:before {
+    content: map-get($icons-map, "weather-bold");
+}
+.i-weather-regular:before {
+    content: map-get($icons-map, "weather-regular");
+}
