@@ -4,7 +4,7 @@ import AppActions from "./AppActions";
 
 const EditorHeader = () => {
   return (
-    <div id="editorHeader">
+    <div id="EditorHeader" className="flex flex-row justify-between items-center py-3">
       <AppWeather />
       <AppDate />
       <AppActions />
