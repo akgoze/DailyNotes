@@ -11,6 +11,7 @@ export default defineConfig({
           `
             @import "./src/assets/stylesheets/utils/_tailwind_config.scss";
             @import "./src/assets/stylesheets/utils/index.scss";
+            @import "./src/assets/stylesheets/icons/icons.scss";
           `,
         ],
       },
