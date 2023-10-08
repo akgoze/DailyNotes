@@ -9,9 +9,9 @@ export default defineConfig({
       scss: {
         additionalData: [
           `
-            @import "./src/assets/stylesheets/utils/_tailwind_config.scss";
-            @import "./src/assets/stylesheets/utils/index.scss";
-            @import "./src/assets/stylesheets/icons/icons.scss";
+            @import "./src/assets/styles/utils/_tailwind_config.scss";
+            @import "./src/assets/styles/utils/index.scss";
+            @import "./src/assets/styles/icons/icons.scss";
           `,
         ],
       },

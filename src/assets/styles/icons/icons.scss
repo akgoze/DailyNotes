@@ -3,8 +3,8 @@ $icons-font: "icons";
 @font-face {
     font-family: $icons-font;
     src:
-        url("src/assets/stylesheets/icons/icons.woff?1b5b1415c3efb482bffc6c443692af8c") format("woff"),
-        url("src/assets/stylesheets/icons/icons.woff2?1b5b1415c3efb482bffc6c443692af8c") format("woff2");
+        url("src/assets/styles/icons/icons.woff?1b5b1415c3efb482bffc6c443692af8c") format("woff"),
+        url("src/assets/styles/icons/icons.woff2?1b5b1415c3efb482bffc6c443692af8c") format("woff2");
 }
 
 i[class^="i-"]:before,

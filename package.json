@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest --coverage",
-    "icon-generate": "fantasticon src/assets/icons -o src/assets/stylesheets/icons -p i --normalize -u ~@/assets/stylesheets/icons -t woff woff2 -g scss"
+    "icon-generate": "fantasticon src/assets/icons -o src/assets/styles/icons -p i --normalize -u ~@/assets/styles/icons -t woff woff2 -g scss"
   },
   "jest": {
     "preset": "ts-jest"
