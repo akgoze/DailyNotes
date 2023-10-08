@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Connect firebase to the project.
 
+## [0.0.2] - 2023-10-08
+
+- Updated editorjs and applied new style changes.
+- 
 ## [0.0.1] - 2023-09-20
 
 - Added editorjs to the project.
