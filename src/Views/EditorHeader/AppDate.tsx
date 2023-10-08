@@ -1,16 +1,12 @@
-import { useEffect, useState } from 'react';
+
+import { dateFormatter } from './../../helpers/Utils'
 
 const AppDate = () => {
-  const [date, setDate] = useState(new Date());
-
-  useEffect(() => {
-    const interval = setInterval(() => setDate(new Date()), 1000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="app-date">
-      {date.toLocaleDateString()} {date.toLocaleTimeString()}
+      <span>TODAY</span>
+      {dateFormatter({date: new Date('2023-10-07'), format: 'DD/MM/YYYY' })}
     </div>
   );
 }
