@@ -1,0 +1,11 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: inline-block;
+  background: {
+    image: url("./../images/bg-app.png");
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+  }
+}

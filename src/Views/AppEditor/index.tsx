@@ -3,6 +3,8 @@ import EditorJS from "@editorjs/editorjs";
 import { tools } from "./tools";
 import "./app-editor.scss";
 
+import EditorHeader from "./../EditorHeader";
+
 const onChange = (data: any, event:any) => {
   console.log(data, event);
 }
@@ -16,7 +18,7 @@ const Editor = () => {
     //Initialize editorjs if we don't have a reference
     if (!ref.current) {
       const editor = new EditorJS({
-        holder: 'AppEditor',
+        holder: 'Editor',
 
         tools: tools,
         placeholder: 'Let`s write an awesome story!',
@@ -37,7 +39,17 @@ const Editor = () => {
     };
   }, []);
 
-  return <div id='AppEditor' />;
+  return (
+    <>
+      <div className="editor-container">
+        <span className="header_line" />
+        <div id="AppEditor">
+          <EditorHeader />
+          <div id='Editor' />
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default memo(Editor);
