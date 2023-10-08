@@ -7,6 +7,10 @@ module.exports = {
       sans: ["Averia Serif Libre", "cursive"],
     },
     extend: {
+      colors: {
+        orange: "#FF9D80",
+        navy: "061737",
+      },
       fontFamily: {
         sans: [
           "Averia Serif Libre",

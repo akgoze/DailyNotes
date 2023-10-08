@@ -4,9 +4,9 @@ import { dateFormatter } from './../../helpers/Utils'
 const AppDate = () => {
 
   return (
-    <div className="app-date">
-      <span>TODAY</span>
-      {dateFormatter({date: new Date('2023-10-07'), format: 'DD/MM/YYYY' })}
+    <div className="app-date flex flex-col items-center">
+      <span className="text-orange font-bold text-xs">TODAY</span>
+      <span className="text-navy font-light text-lg">{dateFormatter({date: new Date(), format: 'DD MMMM, DDDD' })}</span>
     </div>
   );
 }
