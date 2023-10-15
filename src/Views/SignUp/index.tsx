@@ -1,35 +1,37 @@
 import React from "react";
+import { db } from "./../../firebase";
+import { doc, setDoc } from "firebase/firestore";
+import { selectedKeys } from "./../../helpers/Utils";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { User } from "../../models";
 
 const SignUp: React.FC = () => {
   const provider = new GoogleAuthProvider();
   
+
   const handleSubmit = async () => {
     
     const auth = getAuth();
-    await signInWithPopup(auth, provider)
-      .then((result) => {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        const credential:any = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
-        // The signed-in user info.
-        const user = result.user;
 
-        const res = JSON.parse(JSON.stringify(result));
-        console.log(res._tokenResponse
-);
+    await signInWithPopup(auth, provider)
+    .then((data:Record<string, any>) => {
+      
+        const user:User = {
+          ...selectedKeys(data.user, ['uid', 'email', 'photoURL']),
+          ...selectedKeys(data._tokenResponse, ['firstName', 'lastName']), 
+          createdAt: new Date(data.user.metadata.creationTime),
+          lastLoginAt: new Date(data.user.metadata.lastSignInTime),
+        }
+
+        setDoc(doc(db, "users", data.user.uid), user).then(() => {
+            // Document successfully written!
+        }).catch((error) => {
+            throw new Error(error.message);
+        })
         
       })
       .catch(error => {
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // The email of the user's account used.
-        const email = error.customData.email;
-        // The AuthCredential type that was used.
-        const credential = GoogleAuthProvider.credentialFromError(error);
-        
-        throw new Error(errorMessage);
+        throw new Error(error.message);
       });
   };
 
