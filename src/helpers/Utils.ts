@@ -52,4 +52,19 @@ const dateFormatter = ({
   return formattedDate;
 };
 
-export { dateFormatter };
+const selectedKeys = (
+  data: Record<string, any>,
+  keys: string[]
+): Record<string, any> => {
+  const selected: Record<string, any> = {};
+
+  for (const key of keys) {
+    if (data.hasOwnProperty(key)) {
+      selected[key] = data[key];
+    }
+  }
+
+  return selected;
+};
+
+export { dateFormatter, selectedKeys };
