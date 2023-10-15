@@ -1,11 +1,11 @@
 type User = {
   uid?: string;
   email?: string;
-  first_name?: string;
-  last_name?: string;
-  photo_url?: string;
-  created_at?: Date;
-  last_login_at?: Date;
+  firstName?: string;
+  lastName?: string;
+  photoURL?: string;
+  createdAt?: Date;
+  lastLoginAt?: Date;
 };
 
 export type { User };
