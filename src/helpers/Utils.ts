@@ -1,3 +1,5 @@
+import { getAuth } from "firebase/auth";
+
 const dateFormatter = ({
   date,
   format,
@@ -67,4 +69,9 @@ const selectedKeys = (
   return selected;
 };
 
-export { dateFormatter, selectedKeys };
+const isUser = (): boolean => {
+  const user = getAuth().currentUser;
+  return user !== null;
+};
+
+export { dateFormatter, selectedKeys, isUser };
