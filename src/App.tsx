@@ -1,15 +1,14 @@
 import AppEditor from "./Views/AppEditor";
 import SignUp from "./Views/SignUp";
-import { isUser } from "./helpers/Utils";
+
+import { app } from "./firebase";
+
+import FirebaseContext from './routes/FirebaseContext';
 
 function App() {
-  
-  if(!isUser()) {
-    return <SignUp />
-  } else {
-    return <AppEditor />
-  }
-
+  <FirebaseContext.Provider value={app}>
+  <AppEditor />
+  </FirebaseContext.Provider>
 }
 
 export default App

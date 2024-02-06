@@ -4,6 +4,7 @@ import { doc, setDoc } from "firebase/firestore";
 import { selectedKeys } from "./../../helpers/Utils";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { User } from "../../models";
+import "./signUp.scss";
 
 const SignUp: React.FC = () => {
   const provider = new GoogleAuthProvider();
@@ -37,9 +38,10 @@ const SignUp: React.FC = () => {
 
 
   return (
-    <div className="container">
-      <h1>Kayıt Ol</h1>
-        <button onClick={handleSubmit}>Kayıt Ol</button>
+    <div className="login-container flex flex-col mt-24 mx-auto text-center">
+      <img src="./src/assets/images/logo-dailymind.svg" alt="Dailymind logo" />
+      <p className="text-base opacity-60 mb-12 ">turning note-taking into an enjoyable daily habit</p>
+        <button className="px-5 py-3 bg-white rounded-lg" onClick={handleSubmit}>Continue with Google</button>
     </div>
   );
 };
