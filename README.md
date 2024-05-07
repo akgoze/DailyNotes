@@ -1,6 +1,6 @@
-# DailyMind
+# DailyNotes
 
-DailyMind is a web application that allows users to create and manage their own daily journal. Users can create entries, view past entries, and edit or delete entries. Users can also view their entries in a calendar view.
+DailyNotes is a web application that allows users to create and manage their own daily journal. Users can create entries, view past entries, and edit or delete entries. Users can also view their entries in a calendar view.
 
 ## Table of Contents
 
